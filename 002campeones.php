@@ -20,7 +20,7 @@ if ($listaCampeones) {
         Rol: $campeones[rol] <br>
         Dificultad: $campeones[dificultad] <br>
         Descripción: $campeones[descripcion] <br>
-        <a href='003editando.php'><button>Editar</button></a> <a><button>Borrar</button></a><br><br>";
+        <a href='003editando.php?id=$campeones[id]'><button>Editar</button></a> <a><button>Borrar</button></a><br><br>";
     }
 }
 
