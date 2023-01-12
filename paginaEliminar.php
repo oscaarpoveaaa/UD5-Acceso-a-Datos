@@ -9,13 +9,10 @@ if (mysqli_connect_errno()) {
 }
 
 if (isset($id)) {
-    $delete = "DELETE * FROM `champ` WHERE id = $id";
+    $delete = "DELETE FROM `champ` WHERE id = $id;";
     $eliminarCampeon = mysqli_query($conexion, $delete);
 
     if ($eliminarCampeon) {
-
-        foreach ($eliminarCampeon as $campeon) {
-        }
     }
 }
 
@@ -34,7 +31,8 @@ if (isset($id)) {
 
 <body>
     <div class="container !direction !spacing align-center">
-        <h1 class="ml-2">Se ha eliminado <?php echo $campeon['name'] ?> correctamente</h1>
+        <h1 class="ml-2">Se ha eliminado correctamente</h1>
+        <a href="002campeones.php"><button type="button" class='btn btn-primary'>VOLVER</button></a>
     </div>
 </body>
 
