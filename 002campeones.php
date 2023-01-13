@@ -49,13 +49,13 @@ if (isset($id)) {
         Rol: $campeones[rol] <br>
         Dificultad: $campeones[dificultad] <br>
         Descripción: $campeones[descripcion] <br>
-        <a href='003editando.php?id=$campeones[id]'><button class='btn btn-primary'>Editar</button></a> <a><button type='button' class='btn btn-secondary' data-bs-toggle='modal' data-bs-target='#exampleModal'>Borrar</button></a><br><br>";
-        echo "<div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+        <a href='003editando.php?id=$campeones[id]'><button class='btn btn-primary'>Editar</button></a> <a><button type='button' class='btn btn-secondary' data-bs-toggle='modal' data-bs-target='#exampleModal$campeones[id]'>Borrar</button></a><br><br>";
+        echo "<div class='modal fade' id='exampleModal$campeones[id]' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
         <div class='modal-dialog'>
           <div class='modal-content'>
             <div class='modal-header'>
               <h1 class='modal-title fs-5' id='exampleModalLabel'>ESTAS SEGURO QUE QUIERES BORRARLO</h1>
-              <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+              <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Cerrar'></button>
             </div>
             <div class='modal-footer'>
               <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>
